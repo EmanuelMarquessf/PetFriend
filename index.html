@@ -5,16 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="shortcut icon" type="imagex/png" href="./public/Icon/paw.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lemon&family=Mate:ital@0;1&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
   <title>PetFriend</title>
 </head>
 <body class="bg-body-tertiary">
   <!--Navbar-->
   <header>
     <nav class="navbar bg-body-secondary">
-      <div class="container-fluid">
-        <a class="navbar-brand d-flex gap-1 align-items-center">
-          <img src="./public/Icon/paw.svg" alt=""> 
-          <span class="fw-bold font-monospace"><span class="fs-3">P</span>et<span class="fs-3">F</span>riend</span>
+      <div style="margin: 0px 1rem;" class="container-fluid d-flex flex-row align-items-center">
+        <a class="navbar-brand d-flex flex-row gap-3 align-items-center" style="padding: 0px;">
+          <img style="width: 70px" src="./public/logo.png" alt="">
+          <div class="d-flex flex-column lh-1">
+            <span class="fw-normal" style="font-family: 'Oswald'; font-size: 14px ;">encontre</span>
+            <span class="fs-3 textLogo">AMOR</span>
+            <span class="fs-6 fw-normal" style="font-family: 'Oswald';">em quatro patas</span>
+          </div>
         </a>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -206,6 +213,10 @@
   <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
 
   <style>
+    .textLogo{
+      font-family: 'Lemon', Times, serif;
+    }
+
     .div-carousel{
       border-radius: 15px;
     }
